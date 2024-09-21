@@ -13,5 +13,9 @@ public class Problem2 {
             current = current.next;
             curPos++;
         }
+        newNode.next = current.next;
+        current.next = newNode;
+        
+        return head;
     }
 }
