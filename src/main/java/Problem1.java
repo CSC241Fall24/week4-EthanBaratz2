@@ -4,16 +4,16 @@ public class Problem1 {
         ListNode list3 = new ListNode(0);
         ListNode temp = list3;
 
-        while(num1 != null) {
-            temp.next = new ListNode(num1.val);
+        while(l1 != null) {
+            temp.next = new ListNode(l1.val);
             temp = temp.next;
-            num1 = num1.next;
+            l1 = l1.next;
         }
 
-        while(num2 != null) {
-            temp.next = new ListNode(num2.val);
+        while(l2 != null) {
+            temp.next = new ListNode(l2.val);
             temp = temp.next;
-            num2 = num2.next;
+            l2 = l2.next;
         }
         return list3.next;
     }
